@@ -55,3 +55,4 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem 'bootstrap', '~> 4.0.0.alpha6'
 gem 'ransack', '~> 1.8', '>= 1.8.2'
 gem 'devise'
+gem 'analytics-ruby', '~> 2.0.0', :require => 'segment/analytics'

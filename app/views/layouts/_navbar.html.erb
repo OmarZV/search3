@@ -8,7 +8,8 @@
     <ul class="navbar-nav mr-auto">
       <li class="nav-item active">
         <% if user_signed_in? %>
-        	<%= current_user.email %></strong>
+        	<%= current_user.email %>
+        	<%= link_to '<i class="fa fa-sign-in" aria-hidden="true"></i> Logout'.html_safe, destroy_user_session_path, method: :delete, id:"dropdownnav" %>
          <% else %>
 	        <%= link_to '<i class="fa fa-user" aria-hidden="true"></i>&nbspSign Up'.html_safe, new_user_registration_path  %>
 	      	<%= link_to '<i class="fa fa-sign-in" aria-hidden="true"></i>&nbspLog in'.html_safe, new_user_session_path  %>

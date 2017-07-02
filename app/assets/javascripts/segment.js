@@ -9,7 +9,7 @@ document.addEventListener("turbolinks:load", function() {
     analytics.identify(
       meta_tag.content,
       {
-        name: meta_tag.dataset.name,
+        username: meta_tag.dataset.username,
         email: meta_tag.dataset.email,
       }
     );
